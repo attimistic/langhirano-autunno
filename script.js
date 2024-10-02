@@ -12,14 +12,18 @@ L.control.zoom({
     position: 'bottomleft'
 }).addTo(map);
 
-// Aggiungi padding in base al dispositivo
-if (isMobile()) {
-    // Aggiungi padding per dispositivi mobili
-    document.getElementById('map').style.padding = '50px 10px 10px 10px'; // Padding maggiore per mobile (Alto Destra Sotto Sinistra)
-} else {
-    // Nessun padding per desktop
-    document.getElementById('map').style.padding = '0'; // Padding zero per desktop
-}
+// Modifica il padding e l'altezza in base al dispositivo
+document.addEventListener('DOMContentLoaded', function() {
+    var mapContainer = document.getElementById('map');
+    
+    if (isMobile()) {
+        mapContainer.style.padding = '10px'; // Imposta il padding desiderato
+        mapContainer.style.height = 'calc(100vh - 50px)'; // Altezza con spazio per l'intestazione su mobile
+    } else {
+        mapContainer.style.padding = '0px';// Non impostare padding per desktop
+        mapContainer.style.height = '100vh'; // Altezza completa su desktop
+    }
+});
 
 // Aggiungi il layer di OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

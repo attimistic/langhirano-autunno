@@ -6,9 +6,19 @@ html, body {
 }
 /* Imposta la mappa per riempire tutto lo schermo */
 #map {
-    height: 100%;
-    width: 100%;
+    height: 100vh; /* Usa vh per occupare l'altezza dell'intera finestra */
+    width: 100vw; /* Usa vw per occupare la larghezza dell'intera finestra */
+    position: relative;
 }
+/* Carattere*/
+.afacad-flux-custom {
+    font-family: "Afacad Flux", sans-serif; /* Nome del font */
+    font-optical-sizing: auto; /* Abilita la variazione ottica */
+    font-weight: 400; /* Puoi scegliere un valore tra 100 e 1000, 400 è il normale */
+    font-style: normal; /* Imposta lo stile normale */
+    font-variation-settings: "slnt" 0; /* Personalizza la variazione (qui, per esempio, l'inclinazione) */
+  }
+  
  /* Stile per il titolo in sovraimpressione */
 #title {
     position: absolute; /* Posizionamento assoluto */
@@ -16,7 +26,7 @@ html, body {
     left: 10px; /* Distanza dal margine sinistro */
     background-color: rgba(255, 255, 255, 0.8); /* Sfondo semi-trasparente */
     padding: 10px; /* Spazio interno */
-    border-radius: 5px; /* Angoli arrotondati */
+    border-radius: 10px; /* Angoli arrotondati */
     font-size: 24px; /* Dimensione del font */
     z-index: 1000; /* Assicura che sia in primo piano */
 }
@@ -26,3 +36,5 @@ html, body {
     height: auto; /* Altezza automatica per mantenere le proporzioni */
     margin-bottom: 5px; /* Spazio tra le immagini */
 }
+
+

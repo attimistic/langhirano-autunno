@@ -10,14 +10,19 @@
 
 </head>
 <body>
-   <h1 id="title">Mappa dell'Evento</h1> <!-- Titolo in sovraimpressione -->
+   <h1 id="title" class="afacad-flux-custom">Mappa dell'Evento</h1><!-- Titolo in sovraimpressione -->
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var zoom = 20;
+        var zoom = 18;
         // Inizializza la mappa centrata su Langhirano con zoom 18
-        var map = L.map('map').setView([44.6146, 10.2662], zoom);
+        var map = L.map('map', { zoomControl: false }).setView([44.6146, 10.2662], zoom);
+        
+        // Controlli di zoom
+        L.control.zoom({
+            position: 'bottomleft'
+        }).addTo(map);
     
         // Aggiungi il layer di OpenStreetMap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

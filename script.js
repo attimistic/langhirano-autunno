@@ -15,7 +15,7 @@ L.control.zoom({
 // Aggiungi padding in base al dispositivo
 if (isMobile()) {
     // Aggiungi padding per dispositivi mobili
-    document.getElementById('map').style.padding = '50px 10px 10px 10px'; // Padding maggiore per mobile (Alto Destra Sotto Sinistra)
+    document.getElementById('map').style.padding = '500px 10px 10px 10px'; // Padding maggiore per mobile (Alto Destra Sotto Sinistra)
 } else {
     // Nessun padding per desktop
     document.getElementById('map').style.padding = '0'; // Padding zero per desktop

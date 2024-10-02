@@ -5,10 +5,11 @@ html, body {
 }
 /* Imposta la mappa per riempire tutto lo schermo */
 #map {
-    height: 100vh; /* Usa vh per occupare l'altezza dell'intera finestra */
+    height: calc(100vh - 50px); /* Sottrae l'altezza dell'intestazione */
     width: 100vw; /* Usa vw per occupare la larghezza dell'intera finestra */
     position: relative;
 }
+
 /* Carattere*/
 .afacad-flux-custom {
     font-family: "Afacad Flux", sans-serif; /* Nome del font */
@@ -34,6 +35,9 @@ html, body {
     width: 100%; /* Larghezza dell'immagine */
     height: auto; /* Altezza automatica per mantenere le proporzioni */
     margin-bottom: 5px; /* Spazio tra le immagini */
+}
+.leaflet-control-container {
+    z-index: 1000; /* Mantiene i controlli visibili */
 }
 
 

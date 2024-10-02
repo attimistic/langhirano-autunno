@@ -32,10 +32,13 @@
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
+
+        // URL dell'immagine da mostrare nel popup
+        var imageUrl = 'https://d2fg1aan4gy9m1.cloudfront.net/ert/images/537/langhirano-PR-Palazzo_Comunale_di_langhirano-ph.Parma1983-cc_by_sa_40.jpg'; // Cambia questo con l'URL della tua immagine
     
         // Esempio di marker per un punto di interesse a Langhirano
         var marker = L.marker([44.6443, 10.2586]).addTo(map)
-            .bindPopup('Punto di interesse a Langhirano')
+            .bindPopup('<b>Punto di interesse a Langhirano</b><br><img src="' + imageUrl + '" alt="Descrizione dell\'immagine" style="width: 100%; height: auto;">')
             .openPopup();
     </script>
 </body>

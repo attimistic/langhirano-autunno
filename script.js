@@ -70,3 +70,10 @@ markers.forEach(function(marker) {
     L.marker(marker.coords, { icon: marker.icon }).addTo(map)
         .bindPopup('<b>' + marker.title + '</b><br><img src="' + marker.image + '" alt="Descrizione dell\'immagine" style="width: 100%; height: auto;"><br><small>' + marker.description + '</small>');
 });
+
+// Test della funzione
+if (isMobile()) {
+    console.log("Dispositivo mobile rilevato");
+} else {
+    console.log("Dispositivo desktop rilevato");
+}

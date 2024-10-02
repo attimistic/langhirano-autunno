@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (isMobile()) {
         mapContainer.style.padding = '10px'; // Imposta il padding desiderato
         mapContainer.style.height = 'calc(100vh - 50px)'; // Altezza con spazio per l'intestazione su mobile
+        map.invalidateSize();
     } else {
         mapContainer.style.padding = '0px';// Non impostare padding per desktop
         mapContainer.style.height = '100vh'; // Altezza completa su desktop

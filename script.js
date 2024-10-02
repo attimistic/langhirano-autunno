@@ -3,7 +3,7 @@ function isMobile() {
     return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
 }
 
-var zoom = isMobile() ? 12 : 18; // Zoom più basso per mobile
+var zoom = isMobile() ? 16 : 18; // Zoom più basso per mobile
 // Inizializza la mappa centrata su Langhirano con zoom appropriato
 var map = L.map('map', { zoomControl: false }).setView([44.6146, 10.2662], zoom);
 

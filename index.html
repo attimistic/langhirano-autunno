@@ -5,36 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <style>
-        /* Imposta altezza e larghezza a 100% per il body e html */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        /* Imposta la mappa per riempire tutto lo schermo */
-        #map {
-            height: 100%;
-            width: 100%;
-        }
-         /* Stile per il titolo in sovraimpressione */
-        #title {
-            position: absolute; /* Posizionamento assoluto */
-            top: 10px; /* Distanza dal margine superiore */
-            left: 10px; /* Distanza dal margine sinistro */
-            background-color: rgba(255, 255, 255, 0.8); /* Sfondo semi-trasparente */
-            padding: 10px; /* Spazio interno */
-            border-radius: 5px; /* Angoli arrotondati */
-            font-size: 24px; /* Dimensione del font */
-            z-index: 1000; /* Assicura che sia in primo piano */
-        }
-        /* Stile per le immagini nel popup */
-        .popup-image {
-            width: 100%; /* Larghezza dell'immagine */
-            height: auto; /* Altezza automatica per mantenere le proporzioni */
-            margin-bottom: 5px; /* Spazio tra le immagini */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
    <h1 id="title">Mappa dell'Evento</h1> <!-- Titolo in sovraimpressione -->
@@ -42,8 +15,8 @@
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var zoom = 18;
-        // Inizializza la mappa centrata su Langhirano con zoom 16
+        var zoom = 20;
+        // Inizializza la mappa centrata su Langhirano con zoom 18
         var map = L.map('map').setView([44.6146, 10.2662], zoom);
     
         // Aggiungi il layer di OpenStreetMap
@@ -59,19 +32,45 @@
                 iconAnchor: [20, 40],
                 popupAnchor: [0, -40]
             }),
+            L.icon({
+                iconUrl: 'logo_comune.jpg', // Sostituisci con il percorso della prima icona
+                iconSize: [40, 40],
+                iconAnchor: [20, 40],
+                popupAnchor: [0, -40]
+            })
             
             // Aggiungi ulteriori icone qui
         ];
 
-        // URL dell'immagine da mostrare nel popup
-        var imageUrl = 'https://d2fg1aan4gy9m1.cloudfront.net/ert/images/537/langhirano-PR-Palazzo_Comunale_di_langhirano-ph.Parma1983-cc_by_sa_40.jpg'; // Cambia questo con l'URL della tua immagine
-    
-        // Esempio di marker per un punto di interesse a Langhirano
-        var marker = L.marker([44.6146, 10.2662], {
-            icon: icons[0]
-        }).addTo(map)
-            .bindPopup('<b>Municipio di Langhirano</b><br><img src="' + imageUrl + '" alt="Descrizione dell\'immagine" style="width: 100%; height: auto;">')
-            .openPopup();
+        // Array di immagini del popup
+        var images =[
+            'https://d2fg1aan4gy9m1.cloudfront.net/ert/images/537/langhirano-PR-Palazzo_Comunale_di_langhirano-ph.Parma1983-cc_by_sa_40.jpg', // Foto comune di langhirano
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Piazza_Giuseppe_Garibaldi_%28Langhirano%29_-_torre_campanaria_2019-06-26.jpg/800px-Piazza_Giuseppe_Garibaldi_%28Langhirano%29_-_torre_campanaria_2019-06-26.jpg?20190824223426' // Foto piazza
+        ];
+        
+        var markers = [
+        {
+        coords: [44.6146, 10.2662],
+        icon: icons[0],  // Icona associata
+        image: images[0],  // Immagine associata
+        title: 'Municipio di Langhirano',
+        description: 'Questo è il municipio principale.'
+        },
+        {
+        coords: [44.6142, 10.2655],
+        icon: icons[1],  // Icona associata al secondo marker
+        image: images[1],  // Immagine associata
+        title: 'Piazza di Langhirano',
+        description: 'Questa è la piazza storica del paese.'
+        }
+        ];
+
+        
+        // Ciclo per aggiungere i marker
+        markers.forEach(function(marker) {
+            L.marker(marker.coords, { icon: marker.icon }).addTo(map)
+                .bindPopup('<b>' + marker.title + '</b><br><img src="' + marker.image + '" alt="Descrizione dell\'immagine" style="width: 100%; height: auto;"><br><small>' + marker.description + '</small>');
+});
     </script>
 </body>
 </html>

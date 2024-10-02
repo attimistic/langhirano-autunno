@@ -12,6 +12,15 @@ L.control.zoom({
     position: 'bottomleft'
 }).addTo(map);
 
+// Aggiungi padding in base al dispositivo
+if (isMobile()) {
+    // Aggiungi padding per dispositivi mobili
+    document.getElementById('map').style.padding = '50px 10px 10px 10px'; // Padding maggiore per mobile
+} else {
+    // Nessun padding per desktop
+    document.getElementById('map').style.padding = '0'; // Padding zero per desktop
+}
+
 // Aggiungi il layer di OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

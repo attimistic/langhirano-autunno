@@ -42,8 +42,9 @@
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
+        var zoom = 18;
         // Inizializza la mappa centrata su Langhirano con zoom 16
-        var map = L.map('map').setView([44.6146, 10.2662], 16);
+        var map = L.map('map').setView([44.6146, 10.2662], zoom);
     
         // Aggiungi il layer di OpenStreetMap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

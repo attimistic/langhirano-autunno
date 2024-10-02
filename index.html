@@ -42,19 +42,33 @@
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        // Inizializza la mappa centrata su Langhirano con zoom 15
-        var map = L.map('map').setView([44.6146, 10.2662], 15);
+        // Inizializza la mappa centrata su Langhirano con zoom 16
+        var map = L.map('map').setView([44.6146, 10.2662], 16);
     
         // Aggiungi il layer di OpenStreetMap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
+        // Array di icone personalizzate
+        var icons = [
+            L.icon({
+                iconUrl: 'path/to/icon1.png', // Sostituisci con il percorso della prima icona
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34]
+            }),
+            
+            // Aggiungi ulteriori icone qui
+        ];
+
         // URL dell'immagine da mostrare nel popup
         var imageUrl = 'https://d2fg1aan4gy9m1.cloudfront.net/ert/images/537/langhirano-PR-Palazzo_Comunale_di_langhirano-ph.Parma1983-cc_by_sa_40.jpg'; // Cambia questo con l'URL della tua immagine
     
         // Esempio di marker per un punto di interesse a Langhirano
-        var marker = L.marker([44.6146, 10.2662]).addTo(map)
+        var marker = L.marker([44.6146, 10.2662], {
+            icon: icons[0]
+        }).addTo(map)
             .bindPopup('<b>Municipio di Langhirano</b><br><img src="' + imageUrl + '" alt="Descrizione dell\'immagine" style="width: 100%; height: auto;">')
             .openPopup();
     </script>

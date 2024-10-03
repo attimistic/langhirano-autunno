@@ -3,25 +3,29 @@
         "lat": 44.6151,
         "lng": 10.2661,
         "title": "ROR Protezione Civile",
-        "description": "Il mondo e la tecnologia della protezione civile e 'Io non rischio' gioca con noi."
+        "description": "Il mondo e la tecnologia della protezione civile e 'Io non rischio' gioca con noi.",
+        "iconUrl": "icons/ROR_VAL_PARMA.jpg"
     },
     {
         "lat": 44.6150,
         "lng": 10.2662,
         "title": "Sci Club Schia A.S.D.",
-        "description": "Far provare i roller ai bimbi."
+        "description": "Far provare i roller ai bimbi.",
+        "iconUrl": "icons/Schia.jpg"
     },
     {
         "lat": 44.6150,
         "lng": 10.2665,
         "title": "Ran Maishinkan Karate",
-        "description": "Presentazione della disciplina Tradizionale Shotokan con dimostrazioni."
+        "description": "Presentazione della disciplina Tradizionale Shotokan con dimostrazioni.",
+        "iconUrl": "icons/Karate.png"
     },
     {
         "lat": 44.6149,
         "lng": 10.2668,
         "title": "AVIS",
-        "description": "Punto divulgativo sulla donazione di sangue e plasma. - Donazione di materiale di cancelleria."
+        "description": "Punto divulgativo sulla donazione di sangue e plasma. - Donazione di materiale di cancelleria.",
+        "iconUrl": "icons/AVIS.jpg"
     },
     {
         "lat": 44.6149,

@@ -25,18 +25,49 @@ window.initMap = function() {
     }).addTo(map);
 
    // Carica i marker dal file JSON
-   fetch('markers.json')
-   .then(response => response.json())
-   .then(data => {
-       data.forEach(marker => {
-           const markerIcon = L.marker([marker.lat, marker.lng])
-               .bindPopup(`<strong>${marker.title}</strong><br>${marker.description}`) // Aggiungi il titolo e la descrizione
-               .addTo(map);
-       });
-   })
-   .catch(error => {
-       console.error("Errore nel caricamento dei marker:", error);
-   });
-};
+fetch('markers.json')
+  .then(response => response.json())
+  .then(data => {
+      data.forEach(marker => {
+          // Definisci un'icona personalizzata per ogni marker
+          const customIcon = L.icon({
+              iconUrl: marker.iconUrl, // Prende l'URL dell'icona dal JSON
+              iconSize: [32, 32],      // Modifica la dimensione dell'icona a piacere
+              iconAnchor: [16, 32],    // Posiziona il marker correttamente (al centro in basso)
+              popupAnchor: [0, -32]    // Posiziona il popup sopra l'icona
+          });
+
+          // Crea il marker con l'icona personalizzata
+          const markerIcon = L.marker([marker.lat, marker.lng], { icon: customIcon })
+              .bindPopup(`<strong>${marker.title}</strong><br>${marker.description}`) // Aggiungi il titolo e la descrizione
+              .addTo(map);
+      });
+  })
+  .catch(error => {
+      console.error("Errore nel caricamento dei marker:", error);
+  });
+// Carica i marker dal file JSON
+fetch('markers.json')
+  .then(response => response.json())
+  .then(data => {
+      data.forEach(marker => {
+          // Definisci un'icona personalizzata per ogni marker
+          const customIcon = L.icon({
+              iconUrl: marker.iconUrl, // Prende l'URL dell'icona dal JSON
+              iconSize: [32, 32],      // Modifica la dimensione dell'icona a piacere
+              iconAnchor: [16, 32],    // Posiziona il marker correttamente (al centro in basso)
+              popupAnchor: [0, -32]    // Posiziona il popup sopra l'icona
+          });
+
+          // Crea il marker con l'icona personalizzata
+          const markerIcon = L.marker([marker.lat, marker.lng], { icon: customIcon })
+              .bindPopup(`<strong>${marker.title}</strong><br>${marker.description}`) // Aggiungi il titolo e la descrizione
+              .addTo(map);
+      });
+  })
+  .catch(error => {
+      console.error("Errore nel caricamento dei marker:", error);
+  });
+}
 // Carica lo script della mappa dopo che la chiave API è stata definita
 loadMapScript();

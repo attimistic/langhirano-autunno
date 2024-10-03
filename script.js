@@ -15,7 +15,7 @@ function loadMapScript() {
 window.initMap = function() {
     // Inizializza la mappa a langhirano
     var mapZoom = 20;
-    var map = L.map('map').setView([44.6145, 10.2661], mapZoom); // Langhirano
+    var map = L.map('map').setView([44.6147, 10.266], mapZoom); // Langhirano
 
     // Aggiungi il tile layer di Google Maps
     L.gridLayer.googleMutant({
@@ -31,10 +31,10 @@ fetch('markers.json')
       data.forEach(marker => {
           // Definisci un'icona personalizzata per ogni marker
           const customIcon = L.icon({
-              iconUrl: marker.iconUrl, // Prende l'URL dell'icona dal JSON
-              iconSize: [32, 32],      // Modifica la dimensione dell'icona a piacere
-              iconAnchor: [16, 32],    // Posiziona il marker correttamente (al centro in basso)
-              popupAnchor: [0, -32]    // Posiziona il popup sopra l'icona
+            iconUrl: marker.iconUrl, // URL dell'icona dal file JSON
+            iconSize: [40, 40], // Imposta la dimensione a 40px
+            iconAnchor: [20, 40], // Centro l'icona (20px di larghezza, 40px di altezza)
+            popupAnchor: [0, -40], // Posizione del popup (0px orizzontale, -40px verticale)
           });
 
           // Crea il marker con l'icona personalizzata
@@ -46,28 +46,7 @@ fetch('markers.json')
   .catch(error => {
       console.error("Errore nel caricamento dei marker:", error);
   });
-// Carica i marker dal file JSON
-fetch('markers.json')
-  .then(response => response.json())
-  .then(data => {
-      data.forEach(marker => {
-          // Definisci un'icona personalizzata per ogni marker
-          const customIcon = L.icon({
-              iconUrl: marker.iconUrl, // Prende l'URL dell'icona dal JSON
-              iconSize: [32, 32],      // Modifica la dimensione dell'icona a piacere
-              iconAnchor: [16, 32],    // Posiziona il marker correttamente (al centro in basso)
-              popupAnchor: [0, -32]    // Posiziona il popup sopra l'icona
-          });
 
-          // Crea il marker con l'icona personalizzata
-          const markerIcon = L.marker([marker.lat, marker.lng], { icon: customIcon })
-              .bindPopup(`<strong>${marker.title}</strong><br>${marker.description}`) // Aggiungi il titolo e la descrizione
-              .addTo(map);
-      });
-  })
-  .catch(error => {
-      console.error("Errore nel caricamento dei marker:", error);
-  });
 }
 // Carica lo script della mappa dopo che la chiave API è stata definita
 loadMapScript();

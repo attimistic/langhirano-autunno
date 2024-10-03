@@ -1,3 +1,16 @@
+// Funzione di caricamento dello script della mappa
+function loadMapScript() {
+    if (typeof API_KEY === 'undefined') {
+        console.error("La chiave API non è stata caricata correttamente.");
+        return;
+    }
+
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=initMap&libraries=&v=weekly&loading=async`;
+    script.async = true;
+    document.head.appendChild(script);
+}
+
 // Definisci la funzione initMap
 window.initMap = function() {
     // Inizializza la mappa a langhirano
@@ -25,3 +38,5 @@ window.initMap = function() {
        console.error("Errore nel caricamento dei marker:", error);
    });
 };
+// Carica lo script della mappa dopo che la chiave API è stata definita
+loadMapScript();

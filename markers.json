@@ -1,17 +1,17 @@
 [
     {
-        "lat": 44.6151,
-        "lng": 10.2661,
+        "lat": 44.615100,
+        "lng": 10.266100,
         "title": "ROR Protezione Civile",
         "description": "Il mondo e la tecnologia della protezione civile e 'Io non rischio' gioca con noi.",
-        "iconUrl": "icons/ROR_VAL_PARMA.jpg"
+        "iconUrl": "icons/ROR_VAL_PARMA.png"
     },
     {
         "lat": 44.6150,
         "lng": 10.2662,
         "title": "Sci Club Schia A.S.D.",
         "description": "Far provare i roller ai bimbi.",
-        "iconUrl": "icons/Schia.jpg"
+        "iconUrl": "icons/Schia.png"
     },
     {
         "lat": 44.6150,
@@ -25,37 +25,43 @@
         "lng": 10.2668,
         "title": "AVIS",
         "description": "Punto divulgativo sulla donazione di sangue e plasma. - Donazione di materiale di cancelleria.",
-        "iconUrl": "icons/AVIS.jpg"
+        "iconUrl": "icons/AVIS.png"
     },
     {
         "lat": 44.6149,
         "lng": 10.2669,
         "title": "Protezione Civile CCS",
-        "description": null
+        "description": null,
+        "iconUrl": "icons/Protezione_Civile.png"
+
     },
     {
         "lat": 44.6148,
         "lng": 10.2675,
         "title": "Polizia Locale",
-        "description": "Percorso di educazione stradale per ragazzi."
+        "description": "Percorso di educazione stradale per ragazzi.",
+        "iconUrl": "icons/Polizia_Locale.jpg"
     },
     {
         "lat": 44.6147,
         "lng": 10.2663,
         "title": "Pompieropoli",
-        "description": "Simulazioni di interventi per bambini."
+        "description": "Simulazioni di interventi per bambini.",
+        "iconUrl": "icons/Vigili_Fuoco.png"
     },
     {
         "lat": 44.6148,
         "lng": 10.2663,
         "title": "S.O.S Unità Cinofila",
-        "description": "Merende dolci e salate."
+        "description": "Merende dolci e salate.",
+        "iconUrl": "icons/Cinofila.png"
     },
     {
         "lat": 44.6146,
         "lng": 10.2662,
         "title": "AP Langhirano",
-        "description": "Dimostrazioni per volontari dell'associazione e per la popolazione nel pomeriggio. Al mattino esercitazione dei volontari"
+        "description": "Dimostrazioni per volontari dell'associazione e per la popolazione nel pomeriggio. Al mattino esercitazione dei volontari",
+        "iconUrl": "icons/AP.jpeg"
     },
     {
         "lat": 44.6144,
@@ -67,49 +73,57 @@
         "lat": 44.6144,
         "lng": 10.2659,
         "title": "The Angels Val Parma",
-        "description": "Progetto Mille fiori per l'Oncologia. Laboratori per bambini e la ruota della fortuna."
+        "description": "Progetto Mille fiori per l'Oncologia. Laboratori per bambini e la ruota della fortuna.",
+        "iconUrl": "icons/Vigili_Angels.jpg"
     },
     {
         "lat": 44.6142,
         "lng": 10.2664,
         "title": "Softball e Baseball Club",
-        "description": "Tunnel di battuta Baseball e Softball."
+        "description": "Tunnel di battuta Baseball e Softball.",
+        "iconUrl": "icons/Softball.jpg"
     },
     {
         "lat": 44.6140,
         "lng": 10.2669,
         "title": "ASDB Langhiranese Calcio",
-        "description": "Esercitazioni calcistiche con squadre giovanili della società."
+        "description": "Esercitazioni calcistiche con squadre giovanili della società.",
+        "iconUrl": "icons/Langhiranese.png"
     },
     {
         "lat": 44.6146,
         "lng": 10.2657,
         "title": "Il Ponte",
-        "description": "Spazio per bambini con giochi da tavolo, 2 laboratori, mercatino sostenibile. Cioccolata calda e tè dal mattino."
+        "description": "Spazio per bambini con giochi da tavolo, 2 laboratori, mercatino sostenibile. Cioccolata calda e tè dal mattino.",
+        "iconUrl": "icons/Ponte.png"
     },
     {
         "lat": 44.6144,
         "lng": 10.2656,
         "title": "A.VO.PRO.RIT",
-        "description": "Caldarroste e dolci di castagne."
+        "description": "Caldarroste e dolci di castagne.",
+        "iconUrl": "icons/Avoprorit.png"
     },
     {
         "lat": 44.6144,
         "lng": 10.2654,
         "title": "Gruppo Alpini di Langhirano",
-        "description": "Vin Brulè"
+        "description": "Vin Brulè",
+        "iconUrl": "icons/Alpini.png"
     },
     {
         "lat": 44.6144,
         "lng": 10.2659,
         "title": "Pedale val Parma - Spritz Bikers - Wild Team",
-        "description": "Giro in bici alla scoperta delle associazioni."
+        "description": "Giro in bici alla scoperta delle associazioni.",
+        "iconUrl": "icons/Bike.png"
     },
     {
         "lat": 44.6144,
         "lng": 10.2662,
         "title": "Il gioco della rana",
-        "description": null
+        "description": null,
+        "iconUrl": "icons/Frog.png"
     }
 
 ]

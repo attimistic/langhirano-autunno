@@ -40,3 +40,22 @@ body {
     padding: 0;
     text-align: center;
 }
+
+/* Stile per l'infobox */
+.infobox {
+    max-width: 200px; /* Imposta una larghezza massima per il popup */
+    padding: 5px; /* Riduci il padding per un aspetto più compatto */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Aggiungi ombra per un effetto di profondità */
+    border-radius: 5px; /* Aggiungi angoli arrotondati */
+}
+
+.infobox h4 {
+    margin: 0; /* Rimuovi il margine dal titolo */
+    font-size: 16px; /* Imposta la dimensione del font del titolo */
+}
+
+.infobox p {
+    margin: 5px 0 0 0; /* Margine sopra e sotto la descrizione */
+    font-size: 14px; /* Imposta la dimensione del font della descrizione */
+}
+

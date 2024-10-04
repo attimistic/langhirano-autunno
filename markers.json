@@ -44,7 +44,7 @@
     },
     {
         "lat": 44.6147,
-        "lng": 10.2663,
+        "lng": 10.2660,
         "title": "Pompieropoli",
         "description": "Simulazioni di interventi per bambini.",
         "iconUrl": "icons/Vigili_Fuoco.png"
@@ -105,15 +105,15 @@
         "iconUrl": "icons/Avoprorit.png"
     },
     {
-        "lat": 44.6144,
-        "lng": 10.2654,
+        "lat": 44.6141,
+        "lng": 10.2653,
         "title": "Gruppo Alpini di Langhirano",
         "description": "Vin Brulè",
         "iconUrl": "icons/Alpini.png"
     },
     {
-        "lat": 44.6144,
-        "lng": 10.2659,
+        "lat": 44.6145,
+        "lng": 10.2658,
         "title": "Pedale val Parma - Spritz Bikers - Wild Team",
         "description": "Giro in bici alla scoperta delle associazioni.",
         "iconUrl": "icons/Bike.png"

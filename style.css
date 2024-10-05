@@ -26,6 +26,7 @@ h1 {
     z-index: 1; /* Mappa dietro il titolo */
     position: relative; /* Necessario per il posizionamento corretto del titolo */
 }
+
 @font-face {
     font-family: 'Afacad Flux';
     src: url('fonts/AfacadFlux.woff') format('woff'), /* Specifica il formato del font */
@@ -59,3 +60,9 @@ body {
     font-size: 14px; /* Imposta la dimensione del font della descrizione */
 }
 
+/* Stile specifico per schermi più piccoli (max 600px di larghezza) */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Riduce la dimensione del titolo sui telefoni */
+    }
+}

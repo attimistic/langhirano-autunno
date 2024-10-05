@@ -21,8 +21,8 @@
         "iconUrl": "icons/Karate.png"
     },
     {
-        "lat": 44.6149,
-        "lng": 10.2668,
+        "lat": 44.615008,
+        "lng": 10.266820,
         "title": "AVIS",
         "description": "Punto divulgativo sulla donazione di sangue e plasma. - Donazione di materiale di cancelleria.",
         "iconUrl": "icons/AVIS.png"
@@ -43,8 +43,8 @@
         "iconUrl": "icons/Polizia_Locale.jpg"
     },
     {
-        "lat": 44.6147,
-        "lng": 10.2660,
+        "lat": 44.6148,
+        "lng": 10.2661,
         "title": "Pompieropoli",
         "description": "Simulazioni di interventi per bambini.",
         "iconUrl": "icons/Vigili_Fuoco.png"
@@ -64,14 +64,14 @@
         "iconUrl": "icons/AP.jpeg"
     },
     {
-        "lat": 44.6144,
-        "lng": 10.2661,
+        "lat": 44.614499,
+        "lng": 10.2662205,
         "title": "Gruppo Giovani Parrocchia",
         "description": "Dj set con Baby dance, stand dei biscotti."
     },
     {
-        "lat": 44.6144,
-        "lng": 10.2659,
+        "lat": 44.614472,
+        "lng": 10.265971,
         "title": "The Angels Val Parma",
         "description": "Progetto Mille fiori per l'Oncologia. Laboratori per bambini e la ruota della fortuna.",
         "iconUrl": "icons/Vigili_Angels.jpg"
@@ -112,14 +112,14 @@
         "iconUrl": "icons/Alpini.png"
     },
     {
-        "lat": 44.6144,
-        "lng": 10.2656,
+        "lat": 44.6145,
+        "lng": 10.2658,
         "title": "Pedale val Parma - Spritz Bikers - Wild Team",
         "description": "Giro in bici alla scoperta delle associazioni.",
         "iconUrl": "icons/Bike.png"
     },
     {
-        "lat": 44.6144,
+        "lat": 44.6143,
         "lng": 10.2662,
         "title": "Il gioco della rana",
         "description": null,

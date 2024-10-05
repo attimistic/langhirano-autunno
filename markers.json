@@ -14,8 +14,8 @@
         "iconUrl": "icons/Schia.png"
     },
     {
-        "lat": 44.6150,
-        "lng": 10.2665,
+        "lat": 44.615062,
+        "lng": 10.266477,
         "title": "Ran Maishinkan Karate",
         "description": "Presentazione della disciplina Tradizionale Shotokan con dimostrazioni.",
         "iconUrl": "icons/Karate.png"
@@ -44,7 +44,7 @@
     },
     {
         "lat": 44.6148,
-        "lng": 10.2661,
+        "lng": 10.2664,
         "title": "Pompieropoli",
         "description": "Simulazioni di interventi per bambini.",
         "iconUrl": "icons/Vigili_Fuoco.png"
@@ -70,8 +70,8 @@
         "description": "Dj set con Baby dance, stand dei biscotti."
     },
     {
-        "lat": 44.614472,
-        "lng": 10.265971,
+        "lat": 44.614459,
+        "lng": 10.265989,
         "title": "The Angels Val Parma",
         "description": "Progetto Mille fiori per l'Oncologia. Laboratori per bambini e la ruota della fortuna.",
         "iconUrl": "icons/Vigili_Angels.jpg"
@@ -84,8 +84,8 @@
         "iconUrl": "icons/Softball.jpg"
     },
     {
-        "lat": 44.6140,
-        "lng": 10.2669,
+        "lat": 44.6139,
+        "lng": 10.2668,
         "title": "ASDB Langhiranese Calcio",
         "description": "Esercitazioni calcistiche con squadre giovanili della società.",
         "iconUrl": "icons/Langhiranese.png"
@@ -112,8 +112,8 @@
         "iconUrl": "icons/Alpini.png"
     },
     {
-        "lat": 44.6145,
-        "lng": 10.2658,
+        "lat": 44.614525,
+        "lng": 10.265888,
         "title": "Pedale val Parma - Spritz Bikers - Wild Team",
         "description": "Giro in bici alla scoperta delle associazioni.",
         "iconUrl": "icons/Bike.png"

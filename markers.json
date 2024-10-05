@@ -43,8 +43,8 @@
         "iconUrl": "icons/Polizia_Locale.jpg"
     },
     {
-        "lat": 44.6148,
-        "lng": 10.2664,
+        "lat": 44.614905,
+        "lng": 10.266185,
         "title": "Pompieropoli",
         "description": "Simulazioni di interventi per bambini.",
         "iconUrl": "icons/Vigili_Fuoco.png"
@@ -74,7 +74,7 @@
         "lng": 10.265989,
         "title": "The Angels Val Parma",
         "description": "Progetto Mille fiori per l'Oncologia. Laboratori per bambini e la ruota della fortuna.",
-        "iconUrl": "icons/Vigili_Angels.jpg"
+        "iconUrl": "icons/Angels.jpg"
     },
     {
         "lat": 44.6142,
@@ -112,8 +112,8 @@
         "iconUrl": "icons/Alpini.png"
     },
     {
-        "lat": 44.614525,
-        "lng": 10.265888,
+        "lat": 44.614504,
+        "lng": 10.265885,
         "title": "Pedale val Parma - Spritz Bikers - Wild Team",
         "description": "Giro in bici alla scoperta delle associazioni.",
         "iconUrl": "icons/Bike.png"

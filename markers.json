@@ -67,7 +67,8 @@
         "lat": 44.614499,
         "lng": 10.2662205,
         "title": "Gruppo Giovani Parrocchia",
-        "description": "Dj set con Baby dance, stand dei biscotti."
+        "description": "Dj set con Baby dance, stand dei biscotti.",
+        "iconUrl": "icons/Giovani.png"
     },
     {
         "lat": 44.614459,

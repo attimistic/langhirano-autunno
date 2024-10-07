@@ -124,6 +124,13 @@
         "title": "Il gioco della rana",
         "description": null,
         "iconUrl": "icons/Frog.png"
+    },
+    {
+        "lat": 44.614260,
+        "lng": 10.266163,
+        "title": "I Sapori del Giallo",
+        "description": "pippo",
+        "iconUrl": "icons/Karate.png"
     }
 
 ]

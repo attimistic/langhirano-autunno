@@ -131,6 +131,13 @@
         "title": "I Sapori del Giallo",
         "description": null,
         "iconUrl": "icons/Giallo.png"
+    },
+    {
+        "lat": 44.614260,
+        "lng": 10.266163,
+        "title": "Centro Culturale",
+        "description": "Laboratori",
+        "iconUrl":
     }
 
 ]

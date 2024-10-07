@@ -119,8 +119,8 @@
         "iconUrl": "icons/Bike.png"
     },
     {
-        "lat": 44.6143,
-        "lng": 10.2662,
+        "lat": 44.614379,
+        "lng": 10.266285,
         "title": "Il gioco della rana",
         "description": null,
         "iconUrl": "icons/Frog.png"
@@ -129,7 +129,7 @@
         "lat": 44.614260,
         "lng": 10.266163,
         "title": "I Sapori del Giallo",
-        "description": "pippo",
+        "description": ,
         "iconUrl": "icons/Giallo.png"
     }
 

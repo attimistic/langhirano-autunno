@@ -63,7 +63,7 @@ window.initMap = function() {
                     infoWindow = new google.maps.InfoWindow({
                         content: infoWindowContent,
                         position: {
-                            lat: position.lat + (0.00001), // Aggiungi un offset in latitudine
+                            lat: position.lat + (0.00005), // Aggiungi un offset in latitudine
                             lng: position.lng
                         },
                     });
